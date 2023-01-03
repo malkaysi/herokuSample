@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  table.table.table-striped
+      tr
+        th Comment
+        th User
+        th Date Added
+      each val in messages
+        tr
+          td= val.text
+          td= val.user
+          td= val.added
